@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #f8fafc, #eef2ff);
+  background: linear-gradient(120deg, #eaeef5, #e0e7ff);
   color: #0f172a;
 }
 
@@ -21,6 +21,10 @@ body {
   background: linear-gradient(135deg, #020617, #1e293b);
   color: white;
 }
+.hero {
+  margin-bottom: 20px; /* reduce white gap after hero */
+}
+
 
 .hero h1 {
   font-size: 3rem;
@@ -70,15 +74,14 @@ body {
   color: #020617;
 }
 
-/* SECTIONS */
 section {
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.75);
+  margin: 25px auto;          /* reduced whiteness */
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
 }
 
 section h2 {
@@ -200,5 +203,10 @@ section:hover {
   transform: scale(1.01);
   transition: 0.3s ease;
 }
+section:first-of-type {
+  margin-top: 10px;
+}
+
+
 
 
